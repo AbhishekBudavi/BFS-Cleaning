@@ -1,4 +1,4 @@
-export default function Nav() {
+export default function nav() {
     return `
  <nav class="navbar">
         <div class="navbar-left">

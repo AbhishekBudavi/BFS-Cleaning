@@ -3,13 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Double Navbar</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    
+    <!--Top Navbar--> 
     <section>
-        <nav></nav>
-    </section>
-    <script type="module" src="./script.js"></script>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <p>Email: <a href="mailto:info@cleaningservices.com">BFScleaningservices@gmail.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 234-567-890</a></p>
+        </div>
+        <div class="navbar-right">
+            <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        
+
+    </nav>
+
+
+    <!-- Second Navbar -->
+    <nav class="subnavbar">
+        <div class="navbar-left2">
+            <div class="logo">
+                <img src="./Assest/Photos/logo2.png"  >
+                <p>BFS  </p>
+                
+            </div>
+        </div>
+        <div class="navbar-right2">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="./src/Pages/login.html">Login</a></li>
+        </div>
+    </nav>
+    <div class="middle-section">
+        <div class="text-content">
+            <h1>Welcome to BFS Cleaning Services and home page and bfs</h1>
+            <p>We provide top-notch cleaning services for bikes, homes, and cars. <br> Experience the best with us!</p>
+        </div>
+    
+        <div class="slider">
+            <div class="image-wrapper">
+                <div class="image" style="background-image: url('./Assest/Photos/carcleaning.jpg');"></div>
+                <div class="image" style="background-image: url('./Assest/Photos/bike wash.webp');"></div>
+                <div class="image" style="background-image: url('./Assest/Photos/home cleaning.png');"></div>
+                <div class="image" style="background-image: url('./Assest/Photos/loundry.jpg');"></div>
+            </div>
+        </div>
+    </div>
+    
+      <!-- Services Section with Background Image -->
+<div id="services" class="services-section">
+    <div class="service-card">
+        <h2>Bike Cleaning Services</h2>
+        <p>Basic Exterior Wash: Washing the body, wheels, and mirrors.</p>
+        <p class="price">₹150 - ₹250</p>
+        <p>Full Exterior Cleaning with Polishing: Includes body wash, wheel cleaning, and applying polish for a shiny finish.</p>
+        <p class="price">₹300 - ₹500</p>
+    </div>
+
+    <div class="service-card">
+        <div class="carwash">
+        <h2>Car Cleaning Services</h2>
+        <p>Basic Car Wash: Exterior washing of the car’s body, windows, and wheels.</p>
+        <p class="price">₹300 - ₹500</p>
+        <p>Full Exterior and Interior Cleaning: Includes exterior wash and detailed interior cleaning.</p>
+        <p class="price">₹700 - ₹1,200</p>
+        
+        <!-- Explore Button -->
+        <a href="./carwash.html" class="explore-button">Explore</a>
+    </div>
+    </div>
+
+    <div class="service-card">
+        <h2>Home Cleaning Services</h2>
+        <p>Basic Home Cleaning: Sweeping, mopping, dusting, and wiping of all surfaces in common areas.</p>
+        <p class="price">₹800 - ₹1,500</p>
+        <p>Deep Cleaning: Thorough cleaning of all surfaces, windows, bathrooms, and kitchen, including scrubbing and sanitizing.</p>
+        <p class="price">₹2,000 - ₹4,000</p>
+    </div>
+
+    <!-- Laundry Cleaning Services Section (New) -->
+    <div class="service-card">
+        <h2>Laundry Cleaning Services</h2>
+        <p>Basic Wash: Washing and drying of items (e.g., shirts, pants, towels).</p>
+        <p class="price">₹150 - ₹250</p>
+        <p>Deluxe Wash & Iron: Washing, drying, and ironing of clothes.</p>
+        <p class="price">₹300 - ₹500</p>
+    </div>
+</div>
+<div class="combos">
+    
+    <h1>combos</h1>
+</div>
+    <!-- Contact Us Section -->
+    <div id="contact"  >  
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Contact Us - Cleaning Services</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            <!-- Contact Us Section -->
+            <div class="container">
+                <div class="contact-section">
+                    <h1>Contact Us</h1>
+                    <p>Have questions or want to book our cleaning services? Fill out the form below, and we’ll get in touch with you soon!</p>
+        
+                    <!-- Contact Form -->
+                    <form action="submit_form.php" method="POST" class="contact-form">
+                        <!-- Full Name -->
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        
+                        <!-- Email -->
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        
+                        <!-- Phone -->
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        
+                        <!-- Cleaning Category -->
+                        <label for="category">Select Cleaning Category</label>
+                        <select id="category" name="category" required>
+                            <option value="" disabled selected>Choose a category</option>
+                            <option value="bike">Bike Cleaning</option>
+                            <option value="car">Car Cleaning</option>
+                            <option value="home">Home Cleaning</option>
+                        </select>
+        
+                        <!-- Message -->
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write your query or request here..." rows="5" required></textarea>
+        
+                        <!-- Submit Button -->
+                        <button type="submit">Submit</button>
+                    </form>
+        
+                    <!-- Call Us Section -->
+                    <div class="call-us">
+                        <p>Prefer to call us directly?</p>
+                        <p><strong>Phone:</strong> +91 98765 43210</p>
+                        <p>Our team is available to assist you from 9:00 AM to 8:00 PM daily!</p>
+                    </div>
+                </div>
+            </div>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <p>&copy; 2024 YourCompany. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <!-- <li><a href="#sitemap">Sitemap</a></li> -->
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms-of-use">Terms of Use</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <p><strong>Our Office:</strong><br>
+                1234 Main Street,<br>
+                City, State, 12345<br>
+                <a href="https://www.google.com/maps" target="_blank">View on Map</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    </div>
+</div>   
+
+
 </body>
 </html>
